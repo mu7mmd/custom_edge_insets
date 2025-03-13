@@ -29,10 +29,7 @@ class _MainAppState extends State<MainApp> {
             SizedBox(height: 24),
             ElevatedButton(
               onPressed: () async {
-                final text =
-                    _controller.text.trim().isNotEmpty
-                        ? _controller.text.trim()
-                        : null;
+                final text = _controller.nullText;
                 print(text);
               },
               child: Text('Check'),
